@@ -1,0 +1,31 @@
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+        @include logo();
+        @media only screen and (min-width:map-get($vista,mobile)) {
+            @include logo();
+        }
+        @media only screen and (min-width:map-get($vista,tablet)) {
+            @include logo(180px, 120px);
+        }
+        @media only screen and (min-width:map-get($vista,desktop)) {
+            @include logo(220px, 150px);
+        }
+    }
+    h1{
+        @include marca();
+        @media only screen and (min-width:map-get($vista,mobile)) {
+            @include marca();
+        }
+        @media only screen and (min-width:map-get($vista,tablet)) {
+            @include marca(15px, 70px);
+        }
+        @media only screen and (min-width:map-get($vista,desktop)) {
+            @include marca(30px, 90px);
+        }
+    }
+}

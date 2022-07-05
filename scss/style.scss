@@ -1,0 +1,27 @@
+
+/*utilities*/
+@import "./utilities/variables";
+@import "./utilities/extend";
+@import "./utilities/mixins";
+
+/*base*/
+@import "./base/generales";
+@import "./base/reset";
+@import "./base/typo";
+
+/*components*/
+@import "./components/logo";
+
+/*layout*/
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/footer";
+
+/*pages*/
+@import "./pages/home";
+@import "./pages/quienesSomos";
+@import "./pages/secciones";
+@import "./pages/preguntas";
+@import "./pages/comoC";
+@import "./pages/productos";;
+

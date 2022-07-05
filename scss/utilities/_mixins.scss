@@ -1,0 +1,14 @@
+@mixin logo($width:130px, $height:90px){
+    width: $width;
+    height: $height;
+    padding: 0;
+    margin: 10px 0px;
+    position: relative;
+}
+
+@mixin marca($espacio:2px, $font:60px, $color:black){
+    font-family: $tipografia-principal;
+    letter-spacing: $espacio;
+    font-size: $font;
+    color: black;
+}

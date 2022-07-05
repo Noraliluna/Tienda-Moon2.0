@@ -1,0 +1,47 @@
+#cuerpoQ{
+    .tituloP{
+        background-color: map-get($colores, titulos2);
+        margin: 10px 0;
+        h2{
+            @extend .subtitulo;
+        }
+    }
+    .introduccion{
+        background-color: map-get($colores, titulos1);
+        border: black solid 2px;
+        margin: 0 50px;
+    }
+    aside{
+        background-color: map-get($colores, titulos3);
+        border: black solid 2px;
+        padding: 20px;
+        border-radius: 18%;
+        margin: 0 50px;
+        a{
+            color: map-get($colores, titulos1);
+            font-family: $tipografia-principal;
+            size: 20px;
+        }
+    }
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        @media (min-width:map-get($vista, desktop)) {
+                display: flex;
+                flex-direction: row;
+            }
+        div{
+            padding: 10px;
+            margin: 0 50px;
+            margin-bottom: 1rem;
+            border-radius: 10%;
+            background: rgb(245,245,220);
+            background: linear-gradient(0deg, rgba(245,245,220,1) 50%, rgba(0,0,0,1) 50%);
+            img{
+                background-color: map-get($colores, titulos1);
+                padding: 5px;
+                border-radius: 50% ;
+            }
+        }
+    }
+}

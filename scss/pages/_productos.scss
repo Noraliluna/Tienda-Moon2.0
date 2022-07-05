@@ -1,0 +1,33 @@
+#cuerpoP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tituloP{
+        margin: 20px 0;
+        h2{
+            font-family: $tipografia-principal;
+            letter-spacing: 10px;
+            font-size: 30px;
+            color: beige;
+            background-color: black;
+            width: 300px;
+        }
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        img{
+            max-width: 7cm;
+            max-height: 7cm;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            font-family: $tipografia-principal;
+            letter-spacing: 2px;
+        }
+    }
+}

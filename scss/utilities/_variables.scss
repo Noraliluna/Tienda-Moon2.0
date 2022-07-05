@@ -1,0 +1,18 @@
+/*h1*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*h2 y h3*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/*p*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+
+$fondo-principal: url(../img/fondo9.jpg);
+$fondo-header: url(../img/fondo5.jpg);
+$fondo-footer: rgb(19, 18, 18);
+$tipografia-principal: 'Bebas Neue', cursive;
+$parrafo: 'Roboto', sans-serif;
+$subtitulos: 'Montserrat', sans-serif;
+$subt-color: beige;
+
+$vista: ("mobile":468px, "tablet":576px, "desktop":1024px);
+$colores: ("footer":rgb(19, 18, 18), "titulos1":beige, "titulos2":black, "titulos3":rgb(108, 51, 134));

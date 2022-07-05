@@ -1,0 +1,11 @@
+#cuerpoC{
+    .tituloP{
+        background-color: map-get($colores, titulos2);
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        h2{
+            @extend .subtitulo;
+        }
+    }
+}
