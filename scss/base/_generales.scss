@@ -3,7 +3,7 @@
     margin: 0px;
 }
 body{
-    background-image: url(../img/fondo9.jpg);
+    background-image: $fondo-principal;
     background-position-x: center;
     background-color: aliceblue;
     text-align: center;
@@ -16,9 +16,10 @@ body{
         justify-items: center;
         row-gap: 2rem;
     }
-}
-footer{
-    h3{
-        color: $subt-color;
+    footer{
+        background-color: map-get($colores, footer);
+        h3{
+            color: $subt-color;
+        }
     }
 }

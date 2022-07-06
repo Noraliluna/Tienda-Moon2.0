@@ -1,7 +1,4 @@
 #cuerpoP{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .tituloP{
         margin: 20px 0;
         h2{
@@ -17,17 +14,33 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
-        margin: 20px 0;
-        img{
-            max-width: 7cm;
-            max-height: 7cm;
-            margin: 10px;
+        justify-content: space-around;
+        margin: 10px 0;
+        &:hover{
+            background-color: beige;
+            border-radius: 1rem;
         }
-        a{
-            text-decoration: none;
-            font-family: $tipografia-principal;
-            letter-spacing: 2px;
+        div{
+            background-color: black;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding: 0;
+            margin: 10px;
+            img{
+                max-width: 6cm;
+                max-height: 6cm;
+                margin: 0px;
+            }
+            figcaption{
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    text-decoration: none;
+                    font-family: $tipografia-principal;
+                    letter-spacing: 1px;
+                    color: map-get($colores, titulos3);
+                }
+            }
         }
     }
 }

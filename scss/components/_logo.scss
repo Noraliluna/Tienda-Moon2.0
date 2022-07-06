@@ -10,7 +10,7 @@
             @include logo();
         }
         @media only screen and (min-width:map-get($vista,tablet)) {
-            @include logo(180px, 120px);
+            @include logo(160px, 100px);
         }
         @media only screen and (min-width:map-get($vista,desktop)) {
             @include logo(220px, 150px);
@@ -22,7 +22,7 @@
             @include marca();
         }
         @media only screen and (min-width:map-get($vista,tablet)) {
-            @include marca(15px, 70px);
+            @include marca(15px, 60px);
         }
         @media only screen and (min-width:map-get($vista,desktop)) {
             @include marca(30px, 90px);

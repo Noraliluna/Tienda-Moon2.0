@@ -34,8 +34,10 @@ body main {
   justify-items: center;
   row-gap: 2rem;
 }
-
-footer h3 {
+body footer {
+  background-color: rgb(19, 18, 18);
+}
+body footer h3 {
   color: beige;
 }
 
@@ -65,8 +67,8 @@ footer h3 {
 }
 @media only screen and (min-width: 576px) {
   .logo img {
-    width: 180px;
-    height: 120px;
+    width: 160px;
+    height: 100px;
     padding: 0;
     margin: 10px 0px;
     position: relative;
@@ -99,7 +101,7 @@ footer h3 {
   .logo h1 {
     font-family: "Bebas Neue", cursive;
     letter-spacing: 15px;
-    font-size: 70px;
+    font-size: 60px;
     color: black;
   }
 }
@@ -134,6 +136,11 @@ body header .barra {
 body header .login {
   grid-area: login;
 }
+@media (min-width: 576px) {
+  body header {
+    grid-template-areas: "logo" "login" "barra";
+  }
+}
 @media (min-width: 1024px) {
   body header {
     grid-template-areas: "logo logo" "barra login";
@@ -147,6 +154,7 @@ body footer {
   grid-template-areas: "noticias" "pago" "buscar";
   row-gap: 2rem;
   justify-items: center;
+  justify-content: space-evenly;
   grid-area: pie;
 }
 body footer .noticias {
@@ -230,12 +238,33 @@ body footer .formasDePago {
   }
 }
 
+#cuerpoP {
+  display: grid;
+  grid-template-areas: "titulo titulo" "subtitulo1 subtitulo2" "ropaF ropaM";
+  -moz-column-gap: 0;
+       column-gap: 0;
+}
+#cuerpoP .tituloP {
+  grid-area: titulo;
+}
+#cuerpoP .femenino {
+  grid-area: subtitulo1;
+}
+#cuerpoP .ropa1 {
+  grid-area: ropaF;
+}
+#cuerpoP .masculino {
+  grid-area: subtitulo2;
+}
+#cuerpoP .ropa2 {
+  grid-area: ropaM;
+}
+
 header {
-  background-image: url(../img/fondo5.jpg);
-  background-repeat: repeat;
+  background-image: url(../img/fondo-header.jpg);
   background-color: white;
   background-position: center;
-  background-size: 100px;
+  background-repeat: no-repeat;
 }
 header .barra {
   display: flex;
@@ -323,7 +352,6 @@ header .redes ul li {
 footer {
   margin-bottom: 0;
   padding: 2rem 1rem;
-  background-color: rgb(19, 18, 18);
 }
 footer .noticias {
   display: flex;
@@ -450,41 +478,6 @@ footer .formasDePago div img {
   border-radius: 50%;
 }
 
-/*PRODUCTOS*/
-#cuerpoP {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#cuerpoP .tituloP {
-  margin: 20px 0;
-}
-#cuerpoP .tituloP h2 {
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 10px;
-  font-size: 30px;
-  color: beige;
-  background-color: black;
-  width: 300px;
-}
-#cuerpoP section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-}
-#cuerpoP section img {
-  max-width: 7cm;
-  max-height: 7cm;
-  margin: 10px;
-}
-#cuerpoP section a {
-  text-decoration: none;
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 2px;
-}
-
 #cuerpoPF .tituloP {
   background-color: black;
   margin: 10px 0;
@@ -495,11 +488,6 @@ footer .formasDePago div img {
   display: flex;
   justify-content: center;
 }
-#cuerpoP {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #cuerpoP .tituloP {
   margin: 20px 0;
 }
@@ -515,16 +503,30 @@ footer .formasDePago div img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: space-around;
+  margin: 10px 0;
 }
-#cuerpoP section img {
-  max-width: 7cm;
-  max-height: 7cm;
+#cuerpoP section:hover {
+  background-color: beige;
+  border-radius: 1rem;
+}
+#cuerpoP section div {
+  background-color: black;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 0;
   margin: 10px;
 }
-#cuerpoP section a {
+#cuerpoP section div img {
+  max-width: 6cm;
+  max-height: 6cm;
+  margin: 0px;
+}
+#cuerpoP section div figcaption a {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  color: rgb(108, 51, 134);
 }/*# sourceMappingURL=style.css.map */

@@ -18,6 +18,12 @@ body{
         "barra";
         justify-items: stretch;
         align-items: stretch;
+        @media (min-width:map-get($vista,tablet)) {
+            grid-template-areas: 
+            "logo" 
+            "login"
+            "barra";
+        }
         @media (min-width:map-get($vista,desktop)) {
             grid-template-areas: 
             "logo logo"
@@ -45,6 +51,7 @@ body{
             "buscar";
         row-gap: 2rem;
         justify-items: center;
+        justify-content: space-evenly;
         @media (min-width:map-get($vista, tablet)) {
             grid-template-areas: 
                 "pago buscar" 
@@ -137,4 +144,28 @@ body{
         "introduccion publicidad"
         "informacion informacion";
     }
+}
+
+#cuerpoP{
+    display: grid;
+    .tituloP{
+        grid-area: titulo;
+    }
+    .femenino{
+        grid-area: subtitulo1;
+    }
+    .ropa1{
+        grid-area: ropaF;
+    }
+    .masculino{
+        grid-area: subtitulo2;
+    }
+    .ropa2{
+        grid-area: ropaM;
+    }
+    grid-template-areas: 
+    "titulo titulo"
+    "subtitulo1 subtitulo2"
+    "ropaF ropaM";
+    column-gap: 0;
 }
