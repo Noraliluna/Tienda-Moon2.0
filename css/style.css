@@ -5,12 +5,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 /*p*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
-.subtitulo, #cuerpoC .tituloP h2, #cuerpoPF .tituloP h2, #cuerpoQ .tituloP h2, .cuerpoI .tituloP h2 {
+.subtitulo, #cuerpoP .tituloP h2, #cuerpoC .tituloP h2, #cuerpoPF .tituloP h2, #cuerpoQ .tituloP h2, .cuerpoI .tituloP h2 {
   font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
   color: beige;
   margin: 0;
   padding: 10px 0;
+}
+
+.sub-subtitulo, #cuerpoP .masculino, #cuerpoP .femenino, #cuerpoC section ol li h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: beige;
+  padding: 10px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 /*base*/
@@ -240,7 +249,7 @@ body footer .formasDePago {
 
 #cuerpoP {
   display: grid;
-  grid-template-areas: "titulo titulo" "subtitulo1 subtitulo2" "ropaF ropaM";
+  grid-template-areas: "titulo" "subtitulo1" "ropaF" "subtitulo2" "ropaM";
   -moz-column-gap: 0;
        column-gap: 0;
 }
@@ -482,45 +491,91 @@ footer .formasDePago div img {
   background-color: black;
   margin: 10px 0;
 }
+#cuerpoPF div h2 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+#cuerpoPF div div p {
+  font-family: "Roboto", sans-serif;
+  text-align: start;
+}
+#cuerpoPF div div ul {
+  font-family: "Roboto", sans-serif;
+}
+#cuerpoPF div div ul li {
+  list-style: none;
+  text-align: start;
+}
+#cuerpoPF div div ul div img {
+  max-width: 1.5cm;
+  max-height: 1.5cm;
+}
+
 #cuerpoC .tituloP {
   background-color: black;
   margin: 10px 0;
   display: flex;
   justify-content: center;
 }
-#cuerpoP .tituloP {
-  margin: 20px 0;
+#cuerpoC section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
-#cuerpoP .tituloP h2 {
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 10px;
-  font-size: 30px;
+@media screen and (min-width: 1024px) {
+  #cuerpoC section {
+    flex-direction: row;
+  }
+}
+#cuerpoC section ol {
+  background-color: rgb(19, 18, 18);
+  padding: 0;
+  border-radius: 1rem;
+  text-align: start;
+  margin: 0 20px;
+}
+#cuerpoC section ol li {
+  list-style: none;
+}
+#cuerpoC section ol li p {
+  padding: 2px 2px 0 10px;
+  font-family: "Roboto", sans-serif;
   color: beige;
+}
+
+#cuerpoP .tituloP {
   background-color: black;
-  width: 300px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+#cuerpoP .femenino h2 {
+  color: black;
+}
+#cuerpoP .masculino h2 {
+  color: black;
 }
 #cuerpoP section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin: 10px 0;
-}
-#cuerpoP section:hover {
-  background-color: beige;
-  border-radius: 1rem;
+  margin: 10px 0.5rem 10px 2.5rem;
 }
 #cuerpoP section div {
   background-color: black;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding: 0;
-  margin: 10px;
+  padding: 0px;
+  margin: 10px 5px;
+  transition: all 2s ease-out;
 }
 #cuerpoP section div img {
-  max-width: 6cm;
-  max-height: 6cm;
-  margin: 0px;
+  max-width: 7cm;
+  max-height: 7cm;
+  margin: 1px;
 }
 #cuerpoP section div figcaption a {
   display: flex;
@@ -529,4 +584,8 @@ footer .formasDePago div img {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 1px;
   color: rgb(108, 51, 134);
+}
+#cuerpoP section div:hover {
+  transform: scale(1.3, 1.3);
+  background-color: beige;
 }/*# sourceMappingURL=style.css.map */

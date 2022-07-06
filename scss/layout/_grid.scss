@@ -164,8 +164,10 @@ body{
         grid-area: ropaM;
     }
     grid-template-areas: 
-    "titulo titulo"
-    "subtitulo1 subtitulo2"
-    "ropaF ropaM";
+        "titulo" 
+        "subtitulo1"
+        "ropaF" 
+        "subtitulo2"
+        "ropaM";
     column-gap: 0;
 }

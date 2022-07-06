@@ -8,4 +8,32 @@
             @extend .subtitulo;
         }
     }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        @media screen and(min-width:map-get($vista,desktop)) {
+            flex-direction: row;
+        }
+        ol{
+            background-color: map-get($colores, footer);
+            padding: 0;
+            border-radius: 1rem;
+            text-align: start;
+            margin: 0 20px;
+            li{
+                list-style: none;
+                h4{
+                    @extend .sub-subtitulo;
+                }
+                p{
+                    padding: 2px 2px 0 10px;
+                    font-family: $parrafo;
+                    color: beige;
+                }
+            }
+        }
+    }
 }
