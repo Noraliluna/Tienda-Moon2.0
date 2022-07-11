@@ -22,7 +22,7 @@ header{
                         a{
                             text-decoration: none;
                             font-family: $tipografia-principal;
-                            color: rgb(108, 51, 134);
+                            color: rgb(108, 51, 134)!important;
                             @media (min-width:map-get($vista,tablet)) {
                                 border-radius: 10%;
                                 margin: 0 10px;

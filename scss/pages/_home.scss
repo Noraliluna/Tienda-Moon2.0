@@ -14,14 +14,17 @@
             left: 10px;
             h2{
                 color: map-get($colores, titulos1);
-                font-family: $tipografia-principal;
+                font-family: $tipografia-tienda;
+                font-size: 2rem;
                 letter-spacing: 5px;
                 margin: 0;
                 padding: 10px 0;
+                @media (min-width:map-get($vista, desktop)) {
+                    font-size: 4rem;
+                }
             }
         }
         .centrado{
-            background-color: black;
             position: absolute;
             top: 50%;
             left: 50%;

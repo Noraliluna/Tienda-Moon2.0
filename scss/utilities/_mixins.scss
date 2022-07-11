@@ -1,4 +1,4 @@
-@mixin logo($width:130px, $height:90px){
+@mixin logo($width:100px, $height:60px){
     width: $width;
     height: $height;
     padding: 0;
@@ -12,3 +12,5 @@
     font-size: $font;
     color: black;
 }
+
+

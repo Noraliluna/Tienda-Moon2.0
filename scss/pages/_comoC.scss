@@ -27,11 +27,22 @@
                 list-style: none;
                 h4{
                     @extend .sub-subtitulo;
+                    font-size: 20px;
                 }
                 p{
                     padding: 2px 2px 0 10px;
                     font-family: $parrafo;
                     color: beige;
+                }
+            }
+        }
+        .video{
+            iframe{
+                width:350px; 
+                height:215px;
+                @media (min-width:map-get($vista, desktop)) {
+                    width: 500px; 
+                    height: 315px;
                 }
             }
         }

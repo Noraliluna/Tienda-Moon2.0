@@ -14,6 +14,9 @@ footer{
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-start;
+                button{
+                    margin: 3px;
+                }
             }
             input{
                 display: list-item;

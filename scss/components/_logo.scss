@@ -10,10 +10,10 @@
             @include logo();
         }
         @media only screen and (min-width:map-get($vista,tablet)) {
-            @include logo(160px, 100px);
+            @include logo(130px, 90px);
         }
         @media only screen and (min-width:map-get($vista,desktop)) {
-            @include logo(220px, 150px);
+            @include logo(190px, 120px);
         }
     }
     h1{
